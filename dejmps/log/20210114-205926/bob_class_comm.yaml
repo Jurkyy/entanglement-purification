@@ -1,0 +1,27 @@
+- HFL: /home/sengim/quantumproject/dejmps/dejmps.py
+  HLN: 60
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: bob
+  SEN: alice
+  SOD: 0
+  WCT: '2021-01-14 20:59:27.444535'
+- HFL: /home/sengim/quantumproject/dejmps/dejmps.py
+  HLN: 60
+  INS: RECV
+  LOG: 'Message received from alice: 0'
+  MSG: '0'
+  REC: bob
+  SEN: alice
+  SOD: 0
+  WCT: '2021-01-14 20:59:27.444639'
+- HFL: /home/sengim/quantumproject/dejmps/dejmps.py
+  HLN: 61
+  INS: SEND
+  LOG: 'Send classical message to alice: 0'
+  MSG: '0'
+  REC: alice
+  SEN: bob
+  SOD: 0
+  WCT: '2021-01-14 20:59:27.444724'

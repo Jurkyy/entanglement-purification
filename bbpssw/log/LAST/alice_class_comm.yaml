@@ -1,0 +1,27 @@
+- HFL: /home/sengim/quantumproject/bbpssw/bbpssw.py
+  HLN: 21
+  INS: SEND
+  LOG: 'Send classical message to bob: 0'
+  MSG: '0'
+  REC: bob
+  SEN: alice
+  SOD: 0
+  WCT: '2021-01-13 22:32:31.372158'
+- HFL: /home/sengim/quantumproject/bbpssw/bbpssw.py
+  HLN: 22
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: alice
+  SEN: bob
+  SOD: 0
+  WCT: '2021-01-13 22:32:31.372240'
+- HFL: /home/sengim/quantumproject/bbpssw/bbpssw.py
+  HLN: 22
+  INS: RECV
+  LOG: 'Message received from bob: 0'
+  MSG: '0'
+  REC: alice
+  SEN: bob
+  SOD: 0
+  WCT: '2021-01-13 22:32:31.472839'

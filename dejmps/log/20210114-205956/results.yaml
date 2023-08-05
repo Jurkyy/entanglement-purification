@@ -1,0 +1,5 @@
+app_alice:
+  fidelity: 1.0
+  success: true
+app_bob: null
+backend: null

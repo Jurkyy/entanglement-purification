@@ -1,0 +1,44 @@
+#!/bin/zsh
+for i in 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1
+do
+	for j in 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1
+	    do
+	    (
+	    echo "nodes:"
+         echo "  - name: "the_hague""
+         echo "    gate_fidelity: $j"
+         echo "    qubits:"
+         echo "      - id: 0"
+         echo "        t1: 0"
+         echo "        t2: 0"
+         echo "      - id: 1"
+         echo "        t1: 0"
+         echo "        t2: 0"
+         echo "      - id: 2"
+         echo "        t1: 0"
+         echo "        t2: 0"
+         echo "  - name: "delft""
+         echo "    gate_fidelity: $j"
+         echo "    qubits:"
+         echo "      - id: 0"
+         echo "        t1: 0"
+         echo "        t2: 0"
+         echo "      - id: 1"
+         echo "        t1: 0"
+         echo "        t2: 0"
+         echo "      - id: 2"
+         echo "        t1: 0"
+         echo "        t2: 0"
+         echo ""
+         echo "links:"
+         echo "  - name: ch1"
+         echo "    node_name1: "delft""
+         echo "    node_name2: "the_hague""
+         echo "    noise_type: Depolarise"
+         echo "    fidelity: $i"
+            ) > network.yaml
+
+        touch p${i}g${j}.txt
+        repeat 100 {netqasm simulate --formalism=dm} > p${i}g${j}.txt
+    done
+done

@@ -1,0 +1,130 @@
+- AID: 0
+  HFL: null
+  HLN: null
+  INS: rot_x
+  LOG: Doing instruction rot_x with operands ['Q0=0', '3=None', '1=None']
+  OPR:
+  - Q0=0
+  - 3=None
+  - 1=None
+  OUT: null
+  PRC: 33
+  QGR:
+    8768968758624:
+      is_entangled: true
+      qubit_ids:
+      - - alice
+        - 0
+      - - bob
+        - 0
+      state: null
+    8768968761560:
+      is_entangled: true
+      qubit_ids:
+      - - alice
+        - 1
+      - - bob
+        - 1
+      state: null
+  QID:
+  - 0
+  SID: 0
+  SIT: 280533.0
+  VID:
+  - 0
+  WCT: '2021-01-14 21:00:30.658116'
+- AID: 0
+  HFL: null
+  HLN: null
+  INS: rot_x
+  LOG: Doing instruction rot_x with operands ['Q0=1', '3=None', '1=None']
+  OPR:
+  - Q0=1
+  - 3=None
+  - 1=None
+  OUT: null
+  PRC: 35
+  QGR:
+    8768968758624:
+      is_entangled: true
+      qubit_ids:
+      - - alice
+        - 0
+      - - bob
+        - 0
+      state: null
+    8768968761560:
+      is_entangled: true
+      qubit_ids:
+      - - alice
+        - 1
+      - - bob
+        - 1
+      state: null
+  QID:
+  - 1
+  SID: 0
+  SIT: 281533.0
+  VID:
+  - 1
+  WCT: '2021-01-14 21:00:30.923724'
+- AID: 0
+  HFL: null
+  HLN: null
+  INS: cnot
+  LOG: Doing instruction cnot with operands ['Q0=0', 'Q1=1']
+  OPR:
+  - Q0=0
+  - Q1=1
+  OUT: null
+  PRC: 38
+  QGR:
+    8768968758624:
+      is_entangled: true
+      qubit_ids:
+      - - alice
+        - 0
+      - - alice
+        - 1
+      - - bob
+        - 0
+      - - bob
+        - 1
+      state: null
+  QID:
+  - 0
+  - 1
+  SID: 0
+  SIT: 781533.0
+  VID:
+  - 0
+  - 1
+  WCT: '2021-01-14 21:00:31.189540'
+- AID: 0
+  HFL: null
+  HLN: null
+  INS: meas
+  LOG: Doing instruction meas with operands ['Q0=1', 'M0=1']
+  OPR:
+  - Q0=1
+  - M0=1
+  OUT: 1
+  PRC: 40
+  QGR:
+    8768968758624:
+      is_entangled: true
+      qubit_ids:
+      - - alice
+        - 0
+      - - alice
+        - 1
+      - - bob
+        - 0
+      state: null
+  QID:
+  - 1
+  SID: 0
+  SIT: 781533.0
+  VID:
+  - 1
+  WCT: '2021-01-14 21:00:31.992811'
